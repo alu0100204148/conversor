@@ -1,49 +1,22 @@
-<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Conversor by alu0100204148</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>JavaScript Temperature Converter</title>
+      <link href="global.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+     <script type="text/javascript" src="temperature.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Conversor</h1>
-        <p>Practica PL Conversor de Temperaturas.</p>
-
-        <p class="view"><a href="https://github.com/alu0100204148/conversor">View the Project on GitHub <small>alu0100204148/conversor</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/alu0100204148/conversor/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/alu0100204148/conversor/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/alu0100204148/conversor">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="práctica-1" class="anchor" href="#pr%C3%A1ctica-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Práctica 1</h1>
-
-<h2>
-<a id="conversor-de-temperaturas" class="anchor" href="#conversor-de-temperaturas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conversor de Temperaturas</h2>
-
-<blockquote>
-<p>Autor: Alexis López</p>
-</blockquote>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/alu0100204148">alu0100204148</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <h1>Temperature Converter</h1>
+    <table>
+      <tr>
+        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
+        <td><input id="original" onchange="calculate();"></td>
+      </tr>
+      <tr>
+        <th>Converted Temperature:</th>
+        <td><span class="output" id="converted"></span></td>
+      </tr>
+    </table>
   </body>
 </html>
